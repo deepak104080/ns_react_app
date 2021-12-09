@@ -5,7 +5,10 @@ import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import CounterFn from './CounterFn';
+import Comp from './Comp';
 import Error from './Error';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const Name =() => {
@@ -21,6 +24,8 @@ function App() {
             <Route path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
             <Route path="/contact/name" component={Name} />
+            <Route path="/counterfn" component={CounterFn} />
+            <Route path="/comp" component={Comp} />
             <Route component={Error} />
           </Switch>
         </div>
